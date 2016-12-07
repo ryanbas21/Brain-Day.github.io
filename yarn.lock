@@ -418,11 +418,11 @@ babel-plugin-eval@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-eval/-/babel-plugin-eval-1.0.1.tgz#a2faed25ce6be69ade4bfec263f70169195950da"
 
-babel-plugin-inferno@^1.0.1-beta5:
-  version "1.0.1-beta6"
-  resolved "https://registry.yarnpkg.com/babel-plugin-inferno/-/babel-plugin-inferno-1.0.1-beta6.tgz#18c4f9730b6c80f9c716c1cac226dd0fb9057969"
+babel-plugin-inferno@1.2.0-beta12:
+  version "1.2.0-beta12"
+  resolved "https://registry.yarnpkg.com/babel-plugin-inferno/-/babel-plugin-inferno-1.2.0-beta12.tgz#2ba46a11ba402438622940b85818dabe49adae95"
   dependencies:
-    babel-plugin-syntax-jsx "^6.13.0"
+    babel-plugin-syntax-jsx "^6.18.0"
 
 babel-plugin-inline-environment-variables@^1.0.1:
   version "1.0.1"
@@ -506,7 +506,7 @@ babel-plugin-syntax-function-bind@^6.8.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-function-bind/-/babel-plugin-syntax-function-bind-6.13.0.tgz#48c495f177bdf31a981e732f55adc0bdd2601f46"
 
-babel-plugin-syntax-jsx@^6.13.0, babel-plugin-syntax-jsx@^6.3.13:
+babel-plugin-syntax-jsx@^6.18.0, babel-plugin-syntax-jsx@^6.3.13:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
 
@@ -1771,7 +1771,7 @@ glob@^5.0.14, glob@^5.0.15:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@^7.0.3, glob@^7.0.5:
+glob@^7.0.3, glob@^7.0.5, glob@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.1.tgz#805211df04faaf1c63a3600306cdf5ade50b2ec8"
   dependencies:
@@ -1859,6 +1859,16 @@ hawk@~3.1.3:
     hoek "2.x.x"
     sntp "1.x.x"
 
+history@^4.4.0:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/history/-/history-4.4.1.tgz#88c2634b6b8cc68252258a7ddaa3f5f193641955"
+  dependencies:
+    invariant "^2.2.1"
+    loose-envify "^1.2.0"
+    resolve-pathname "^2.0.0"
+    value-equal "^0.1.1"
+    warning "^3.0.0"
+
 hoek@2.x.x:
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
@@ -1932,15 +1942,29 @@ indexof@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
 
-inferno-component@^1.0.0-beta5:
-  version "1.0.0-beta5"
-  resolved "https://registry.yarnpkg.com/inferno-component/-/inferno-component-1.0.0-beta5.tgz#fb35ead741e4305210bc5d0f93fddca28d244891"
+inferno-component@1.0.0-beta32:
+  version "1.0.0-beta32"
+  resolved "https://registry.yarnpkg.com/inferno-component/-/inferno-component-1.0.0-beta32.tgz#2bb0aac933c5033b186d809816e158f58a2590ed"
   dependencies:
-    inferno "1.0.0-beta5"
+    inferno "1.0.0-beta32"
 
-inferno@^1.0.0-beta5, inferno@1.0.0-beta5:
-  version "1.0.0-beta5"
-  resolved "https://registry.yarnpkg.com/inferno/-/inferno-1.0.0-beta5.tgz#3a87c5723c5423291fef47df1335f23901477d72"
+inferno-create-element@1.0.0-beta32:
+  version "1.0.0-beta32"
+  resolved "https://registry.yarnpkg.com/inferno-create-element/-/inferno-create-element-1.0.0-beta32.tgz#f34162441235b5585d50a92aa5449b784da42d20"
+  dependencies:
+    inferno "1.0.0-beta32"
+
+inferno-router@1.0.0-beta32:
+  version "1.0.0-beta32"
+  resolved "https://registry.yarnpkg.com/inferno-router/-/inferno-router-1.0.0-beta32.tgz#8203957077e9d99f1773e4b1fbda8dbebcad0f71"
+  dependencies:
+    inferno "1.0.0-beta32"
+    inferno-component "1.0.0-beta32"
+    inferno-create-element "1.0.0-beta32"
+
+inferno@1.0.0-beta32:
+  version "1.0.0-beta32"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-1.0.0-beta32.tgz#bd216a5117280da4a15ebcc4b4e1faf3603afc0d"
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -1986,6 +2010,12 @@ interpret@^0.6.4:
 invariant@^2.2.0:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.1.tgz#b097010547668c7e337028ebe816ebe36c8a8d54"
+  dependencies:
+    loose-envify "^1.0.0"
+
+invariant@^2.2.1:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
   dependencies:
     loose-envify "^1.0.0"
 
@@ -2451,7 +2481,7 @@ longest@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
 
-loose-envify@^1.0.0:
+loose-envify@^1.0.0, loose-envify@^1.2.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.3.0.tgz#6b26248c42f6d4fa4b0d8542f78edfcde35642a8"
   dependencies:
@@ -3042,6 +3072,10 @@ requires-port@1.0.x, requires-port@1.x.x:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
 
+resolve-pathname@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/resolve-pathname/-/resolve-pathname-2.0.2.tgz#e55c016eb2e9df1de98e85002282bfb38c630436"
+
 resolve@^1.1.6:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.1.7.tgz#203114d82ad2c5ed9e8e0411b3932875e889e97b"
@@ -3429,6 +3463,13 @@ url-parse@1.0.x:
     querystringify "0.0.x"
     requires-port "1.0.x"
 
+url@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/url/-/url-0.11.0.tgz#3838e97cfc60521eb73c525a8e55bfdd9e2e28f1"
+  dependencies:
+    punycode "1.3.2"
+    querystring "0.2.0"
+
 url@~0.10.1:
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/url/-/url-0.10.3.tgz#021e4d9c7705f21bbf37d03ceb58767402774c64"
@@ -3464,6 +3505,10 @@ uuid@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-2.0.3.tgz#67e2e863797215530dff318e5bf9dcebfd47b21a"
 
+value-equal@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/value-equal/-/value-equal-0.1.1.tgz#b174df21f203c81e17f2e4d59d3a900024cbef7b"
+
 vary@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.0.tgz#e1e5affbbd16ae768dd2674394b9ad3022653140"
@@ -3479,6 +3524,12 @@ vm-browserify@0.0.4:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-0.0.4.tgz#5d7ea45bbef9e4a6ff65f95438e0a87c357d5a73"
   dependencies:
     indexof "0.0.1"
+
+warning@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/warning/-/warning-3.0.0.tgz#32e5377cb572de4ab04753bdf8821c01ed605b7c"
+  dependencies:
+    loose-envify "^1.0.0"
 
 watchpack@^0.2.1:
   version "0.2.9"

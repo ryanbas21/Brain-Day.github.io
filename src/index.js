@@ -6,18 +6,16 @@ import { Router, Route } from 'inferno-router';
 import createBrowserHistory from 'history/createBrowserHistory';
 
 // app components
-import MyApp from './MyApp';
-import VersionComponent from './VersionComponent';
-
+import IndexComponent from './homepage/homepage';
+import Docs from './documentation/doc-container';
+import Demo from './demo/demo';
 const browserHistory = createBrowserHistory();
 
 const routes = (
 	<Router history={ browserHistory }>
-		<Route component={ MyApp }>
-			<Route path="/" component={ VersionComponent } />
-		</Route>
+		<Route path="/" component={ IndexComponent } />
+		<Route path='/docs' component={ Docs } />
+		<Route path='/demo' component={ Demo } />
 	</Router>
 );
-
 Inferno.render(routes, document.getElementById('app'));
-
