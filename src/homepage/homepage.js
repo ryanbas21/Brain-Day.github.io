@@ -6,8 +6,10 @@ import NavBar from '../navbar';
 const IndexComponent = () =>
       <div>
         <NavBar />
-        <h1>BrainFreeze</h1>
-        <blockquote className='center-this-div'><Desc /></blockquote>
+        <h1 className='center-homepage'>BrainFreeze</h1>
+        <div>
+         <Desc />
+        </div>
       </div>
 
 export default IndexComponent
