@@ -9,10 +9,13 @@ export default class Docs extends Component {
   }
   render () {
     return (
-      <div>
-        <NavBar />
-        <h1>hey</h1>
-        <Documentation />
+      <div className='pagination-center-example'>
+        <NavBar className="callout secondary"/>
+        <div class="row">
+          <div className='small-9 columns'></div>
+          <Documentation className='small-8 columns '/>
+        </div>
+
       </div>
     )
   }

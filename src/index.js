@@ -1,6 +1,5 @@
 // inferno module
 import Inferno from 'inferno';
-
 // routing modules
 import { Router, Route } from 'inferno-router';
 import createBrowserHistory from 'history/createBrowserHistory';

@@ -2,10 +2,12 @@ import Inferno from 'inferno';
 import { Link } from 'inferno-router';
 
  const NavBar = () =>
-      <div>
-        <Link to="/">Home</Link>
-        <Link to="/docs">Documentation</Link>
-        <Link to='/demo'>Demo</Link>
-      </div>
+      <nav>
+       <ul className="horizontal menu callout secondary">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/docs">Documentation</Link></li>
+        <li><Link to='/demo'>Demo</Link></li>
+        </ul>
+      </nav>
 
 export default NavBar

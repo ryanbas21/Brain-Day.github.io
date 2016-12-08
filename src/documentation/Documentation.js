@@ -5,21 +5,21 @@ const Documentation = () =>
       <h1>API Reference </h1>
         <article>
           <ul>
-            <li>
-              <h4>addReducer(reducer: Function): void</h4>
-              <div class='method'>Adds reducers to be run on state on invokation of dispatch.</div>
+            <li className='no-bullet'>
+              <dt>addReducer(reducer: Function): void</dt>
+              <blockquote>Adds reducers to be run on state on invokation of dispatch.</blockquote>
             </li>
-            <li>
-            <h4> getState() </h4>
-            <div class='method'>Object Returns a deep clone of state.</div>
+            <li className='no-bullet'>
+                <dt> getState()</dt>
+                <blockquote>Object Returns a deep clone of state.</blockquote>
             </li>
-            <li>
-              <h4>dispatch(action: Object): Object </h4>
-              <div class='method'>Takes in action objects and checks for lock related commands before running state through reducers.</div>
+            <li className='no-bullet'>
+              <dt>dispatch(action: Object): Object </dt>
+              <blockquote>Takes in action objects and checks for lock related commands before running state through reducers.</blockquote>
             </li>
-            <li>
-              <h4>subscribe(fn: Function): Function </h4>
-              <div class='method'>Subscribes a listener function to state changes and returns a function to unsubscribe the same listener function.</div>
+            <li className='no-bullet'>
+              <dt>subscribe(fn: Function): Function </dt>
+              <blockquote>Subscribes a listener function to state changes and returns a function to unsubscribe the same listener function.</blockquote>
             </li>
           </ul>
           </article>
