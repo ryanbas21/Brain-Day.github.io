@@ -3,21 +3,11 @@ import Component from 'inferno-component';
 import Desc from './description';
 import NavBar from '../navbar';
 
-export default class IndexComponent extends Component {
-  constructor (){
-    super()
-    //defining state incase it's needed
-    this.state = {
-
-    }
-  }
-  render() {
-    return (
+const IndexComponent = () =>
       <div>
         <NavBar />
         <h1>BrainFreeze</h1>
-        <blockquote><Desc className="column align-self-top"/></blockquote>
+        <blockquote className='center-this-div'><Desc /></blockquote>
       </div>
-    )
-  }
-}
+
+export default IndexComponent
