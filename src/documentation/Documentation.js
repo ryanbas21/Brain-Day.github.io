@@ -22,11 +22,11 @@ const Documentation = () =>
       </div>
 
       <div>
-        <h3>API REFERENCE</h3>
+        <h3  id='api-reference'>API REFERENCE</h3>
         <blockquote> Brainfreeze aims to provide a familiar and predictable state container.</blockquote>
       </div>
       <ul>
-        <li><blockquote>Installation
+        <li className='no-bullet docs-code'><blockquote>Installation
         <code className='npm-space'>npm i brain-freeze --save</code></blockquote>
         </li>
         <li className='no-bullet docs-code' id='combine-reducer'>
@@ -34,17 +34,17 @@ const Documentation = () =>
           <blockquote>Adds reducers to be run on state on invocation of dispatch.
                   The reducer object should take the same shape as the state object.
               </blockquote>
-          <code>writing some code here</code>
+
         </li>
         <li className='no-bullet docs-code' id='get-state'>
           <dt>Get State : Object</dt>
           <blockquote>Object returns state</blockquote>
-          <code>code goes here</code>
+
         </li>
         <li className='no-bullet docs-code' id='dispatch'>
           <dt>Dispatch : Object </dt>
           <blockquote>Takes in action objects and checks for lock related commands (see locked state) before running state through reducers.</blockquote>
-          <code>code goes here</code>
+
         </li>
         <li className='no-bullet docs-code' id='subscribe'>
           <dt>Subscribe : Function </dt>
@@ -53,7 +53,6 @@ const Documentation = () =>
                In order to subscribe to a specific key path, the developer must pass in a second argument after the listener,
                that is the key path within the state object, as a string. This must be done in dot notation, even with arrays.
                See example below.</blockquote>
-          <code>ALSO DONT FORGET THIS</code>
         </li>
       </ul>
       <ul>
@@ -74,7 +73,6 @@ const Documentation = () =>
                            dispatch method sees the 'lockState' or 'unlockState' property it will lock or unlock state respectively,
                           and then exit.
                       </blockquote>
-              <code>DONT FUCKING FORGET THIS</code>
             </li>
             <li className='no-bullet docs-code' id='lock-specific-key-paths'>
               <dt>Locking Specific Key Paths</dt>
@@ -84,7 +82,7 @@ const Documentation = () =>
                              In certain modes, like dev-mode, the console will log out that the key is locked, and will give the developer
                              some feedback.
                         </blockquote>
-              <code>code goes here</code>
+
             </li>
           </ul>
         </li>
@@ -94,17 +92,17 @@ const Documentation = () =>
         <li className='no-bullet docs-code' id='get-all-keys'>
           <dt>Get All Keys : Function </dt>
           <blockquote>Returns flattened object from nested object.</blockquote>
-          <code>code goes here</code>
+
         </li>
         <li className='no-bullet docs-code' id='key-paths-changed'>
           <dt>Key Paths Changed : Function </dt>
           <blockquote>Returns array of keys from obj1 that are not the same in obj2. Will not return keys from obj2 that are not in obj1.</blockquote>
-          <code>code goes here</code>
+
         </li>
         <li className='no-bullet docs-code' id='save-history'>
           <dt>Save History : Function </dt>
           <blockquote>Saves a history of state in the form of an array of deep cloned, deep frozen copies.</blockquote>
-          <code>code goes here</code>
+
         </li>
       </ul>
     </article>
