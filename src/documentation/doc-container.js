@@ -6,7 +6,7 @@ import SideNav from './side-nav';
 const Docs = () =>
       <div className='pagination-center-example'>
         <NavBar />
-          <div className='small-2 columns callout secondary'>
+          <div className=''>
             <div className='div-one-hundred'>
               <SideNav/>
             </div>
