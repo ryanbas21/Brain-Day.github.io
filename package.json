@@ -39,10 +39,13 @@
     "url": "^0.11.0"
   },
   "dependencies": {
+    "css-loader": "^0.26.1",
     "history": "^4.4.0",
     "inferno": "1.0.0-beta32",
     "inferno-component": "1.0.0-beta32",
     "inferno-create-element": "1.0.0-beta32",
-    "inferno-router": "1.0.0-beta32"
+    "inferno-router": "1.0.0-beta32",
+    "react-foundation": "^0.7.0",
+    "style-loader": "^0.13.1"
   }
 }

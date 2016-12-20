@@ -2,18 +2,19 @@ import Inferno from 'inferno';
 import Component from 'inferno-component';
 import Documentation from './Documentation'
 import NavBar from '../navbar';
-
-export default class Docs extends Component {
-  constructor() {
-    super()
-  }
-  render () {
-    return (
-      <div>
+import SideNav from './side-nav';
+const Docs = () =>
+      <div className='pagination-center-example'>
         <NavBar />
-        <h1>hey</h1>
-        <Documentation />
+          <div className='small-2 columns callout secondary'>
+            <div className='div-one-hundred'>
+              <SideNav/>
+            </div>
+          </div>
+          <div className='large-6 columns'>
+          <Documentation/>
+          </div>
+          <div className='large-3 columns'> </div>
       </div>
-    )
-  }
-}
+
+export default Docs

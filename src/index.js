@@ -1,6 +1,5 @@
 // inferno module
 import Inferno from 'inferno';
-
 // routing modules
 import { Router, Route } from 'inferno-router';
 import createBrowserHistory from 'history/createBrowserHistory';
@@ -9,6 +8,7 @@ import createBrowserHistory from 'history/createBrowserHistory';
 import IndexComponent from './homepage/homepage';
 import Docs from './documentation/doc-container';
 import Demo from './demo/demo';
+require('../styles.css');
 const browserHistory = createBrowserHistory();
 
 const routes = (
