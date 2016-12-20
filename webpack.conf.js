@@ -26,7 +26,7 @@ module.exports = {
 		proxy: {
 			'/': {
 				bypass: function (req, res, proxyOptions) {
-					return '/public/index.html';
+					return 'index.html';
 				}
 			}
 		}

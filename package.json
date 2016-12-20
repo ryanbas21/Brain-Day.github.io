@@ -2,8 +2,9 @@
   "name": "inferno-boilerplate",
   "version": "0.0.1",
   "description": "A basic boilerplate to get you started with Inferno + Inferno Router + JSX",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "start": "webpack-dev-server --quiet --config webpack.conf.js --host 0.0.0.0"
   },
   "repository": {
@@ -33,10 +34,10 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "eslint": "^1.10.3",
-    "webpack": "^1.12.11",
-    "webpack-dev-server": "^1.14.1",
     "glob": "^7.1.1",
-    "url": "^0.11.0"
+    "url": "^0.11.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
     "css-loader": "^0.26.1",
