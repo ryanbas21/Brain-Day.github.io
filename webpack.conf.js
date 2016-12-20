@@ -14,7 +14,7 @@ module.exports = {
 			test: /\.js$/,
 			loader: 'babel-loader'
 		},
-		{ test: /\.css$/, loaders: ["style","css"] }
+		{ test: /\.css$/, loaders: ["style","css"], }
 ]
 	},
 	devServer: {

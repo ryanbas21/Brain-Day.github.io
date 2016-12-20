@@ -2,7 +2,6 @@ import Inferno from 'inferno';
 import Component from 'inferno-component';
 import Desc from './description';
 import NavBar from '../navbar';
-require('../../styles.css');
 const IndexComponent = () =>
       <div>
         <NavBar />

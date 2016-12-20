@@ -7,7 +7,9 @@ const Docs = () =>
       <div className='pagination-center-example'>
         <NavBar />
           <div className='small-2 columns callout secondary'>
-            <SideNav/>
+            <div className='div-one-hundred'>
+              <SideNav/>
+            </div>
           </div>
           <div className='large-6 columns'>
           <Documentation/>
